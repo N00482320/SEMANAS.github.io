@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Javascript</title>
+    <style>
+        .miestylo{
+            background-color:yellow;
+            color:red;
+            border-radius:5px;
+        }
+    </style>
+    <script>
+        function saludar(){
+            let nombre = document.getElementById("txtnom").value
+            const miMensaje = document.getElementById("mensaje")
+            miMensaje.innerHTML = "<h3> Bienvenido a mi sitio Web: " + nombre + "</h3>"
+            miMensaje.classList.add("miestylo") 
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario de Saludo</h1>
+    <label for="">Escribir su nombre</label>
+    <input type="text" name="txtnom" id="txtnom">
+    <button onclick="saludar()">Saludar</button>
+    <p id="mensaje"></p>
+
+    
+</body>
+</html>

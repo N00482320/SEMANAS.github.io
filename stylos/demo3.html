@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Uso de Formularios</h1>
+    <form action="">
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni">
+        <br>
+        <label for="nombre">NOMBRE</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="mensaje">MENSAJE</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <br>
+        <input type="checkbox" name="primaria" id="estudios">Primaria
+        <input type="checkbox" name="secundaria" id="estudios">Secundaria
+        <input type="checkbox" name="tecnico" id="estudios">Tecnico
+        <input type="checkbox" name="universidad" id="estudios">Universidad
+        <br>
+        <input type="radio" name="estado" id="">Soltero
+        <input type="radio" name="estado" id="">Casado
+        <input type="radio" name="estado" id="">Viudo
+        <input type="radio" name="estado" id="">Divorciado
+        <br>
+        Seleccione Carrera Profesional
+        <select name="carrera" id="carrera">
+            <option value="1">Ingenieria de Sistemas</option>
+            <option value="2">Ingenieria de Redes</option>
+            <option value="3">Ingenieria de Ciberseguridad</option>
+            <option value="4">Ingenieria de Software</option>
+            <option value="5">Ingenieria de IA</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar"><input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>
