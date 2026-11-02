@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Añadir elementos a una lista</h1>
+    <ul id="mi-lista"></ul>
+    <script>
+        //1. Crear el elemento
+        const item1 = document.createElement("li")
+        //2. Asignarle contenido
+        item1.textContent = "Comprar Café"
+        //3. Insertarlo en la lista
+        const lista = document.getElementById("mi-lista")
+        lista.appendChild(item1)
+
+        const item2 = document.createElement("li")
+        item2.textContent = "Comprar Helado"
+        lista.appendChild(item2)
+
+        const item3 = document.createElement("li")
+        item3.textContent = "Comprar Pastel"
+        lista.appendChild(item3)
+
+
+    </script>
+    
+</body>
+</html>

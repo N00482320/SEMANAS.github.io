@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button id="mi-boton">Haz clic aqui</button>
+    <p id="mensaje">Texto Original</p>
+    <script>
+        const boton = document.getElementById("mi-boton")
+        const msg = document.getElementById("mensaje")
+        //El evento clic del boton
+        boton.addEventListener("click", () => {
+            msg.textContent = "! Hiciste clic en el boton ¡"
+            msg.style.color = "green"
+            
+
+        });
+    </script>
+
+</body>
+</html>

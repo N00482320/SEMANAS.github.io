@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Dos Números</title>
+    <script>
+        function procesar() {
+            let num1 = parseInt(document.getElementById("txtnum1").value) 
+            let num2 = parseInt(document.getElementById("txtnum2").value) 
+            let suma = num1 + num2;
+            alert("La suma es: " + suma);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Suma de Dos Números</h1>
+    <form onsubmit="procesar()">
+        Número 1: <input type="number" id="txtnum1" step="any" required>
+        <br><br>
+        Número 2: <input type="number" id="txtnum2" step="any" required>
+        <br><br>
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Sumar">
+    </form>
+</body>
+
+</html>

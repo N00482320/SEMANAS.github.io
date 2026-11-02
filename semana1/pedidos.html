@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos | Panadería Santa Rosa</title>
+</head>
+<body>
+    <header>
+        <p><strong>Panadería Santa Rosa</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Haz tu pedido</h1>
+        <p>Te confirmaremos por WhatsApp en menos de una hora.</p>
+        <form action="#">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" required>
+            </fieldset>
+            <fieldset>
+                <legend>Tu pedido</legend>
+                <label for="producto">Producto</label>
+                <select id="producto" name="producto" required>
+                    <option value="">Elige un producto</option>
+                    <option>Pan francés</option>
+                    <option>Pan de yema</option>
+                    <option>Chancay</option>
+                    <option>Torta de chocolate</option>
+                </select>
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                <label for="fecha">Fecha de recojo</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <label for="notas">Indicaciones (opcional)</label>
+                <textarea id="notas" name="notas" rows="3"></textarea>
+            </fieldset>
+            <input type="checkbox" id="consentimiento" name="consentimiento" required>
+            <label for="consentimiento">Autorizo que usen mis datos solo para atender este pedido.</label>
+            <button type="submit">Enviar pedido</button>
+        </form>
+    </main>
+    <footer id="contacto">
+        <h2>Visítanos</h2>
+        <address>
+            Av. Los Panaderos 123, [distrito]<br>
+            Celular: <a href="tel:+51900000000">900 000 000</a>
+        </address>
+        <p>Lunes a sábado de 6:00 a 21:00 · Domingos de 6:00 a 13:00</p>
+    </footer>
+</body>
+</html>

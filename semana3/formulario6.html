@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Formularios</title>
+    <script>
+        function procesar() {
+            let dni = document.getElementById("txtdni").value
+            alert(dni)
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Formulario de Datos Personales</h1>
+    <form action="" onsubmit="procesar()">
+        DNI : <input type="text" name="text" id="text">
+        <br><input type="reset" value="Limpiar"><input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
